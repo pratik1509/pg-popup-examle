@@ -1,0 +1,17 @@
+<div *ngIf="isModalShown" style="background-color:red">
+  <div class="modal-dialog">
+
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" (click)="hide()">&times;</button>
+              <h4 class="modal-title">Warning Message</h4>
+          </div>
+          <div class="modal-body">
+            <p>This popup is visble when user clicks on other tabs or outside window.</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-default" (click)="hide()">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
